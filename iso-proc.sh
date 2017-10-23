@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# confirmation
+read -p "Would you like to process all ISOs in the current directory? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+
 for file in *.iso
 do
         dir="${file%.iso}"
@@ -13,4 +19,8 @@ find "$PWD" -type d | sort | while read dir
         [ ! -f md5sum.txt ] &&  md5sum * > md5sum.txt
         chmod a=r "${dir}"/md5sum.txt
 done
+
+yes | rm ./md5sum.txt
+
+fi
 
