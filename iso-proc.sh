@@ -7,9 +7,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 
 for file in *.iso
-dofind /home/ebh.312.ninja/ -name '*.iso' \
-        |sed -e 's/\/home\/ebh.312.ninja/http:\/\/ebh.312.ninja/' > list.txt
-
+do
         dir="${file%.iso}"
         mkdir -- "$dir"
         mv -- "$file" "$dir"
