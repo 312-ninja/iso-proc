@@ -9,4 +9,4 @@ Intended batch use:
 
         download all isos (one at a time)
 
-                wget -i $Yoururl/list.txt
+                wget -i $YourURL/list.txt
