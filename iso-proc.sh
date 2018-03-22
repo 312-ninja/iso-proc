@@ -27,7 +27,7 @@ fi
 find /home/ebh.312.ninja/ -name '*.iso' -not -path '/home/ebh.312.ninja/dell/archive/*' \
 	|sed -e 's/\/home\/ebh.312.ninja/http:\/\/ebh.312.ninja/' > list.txt
 
-chmod www-data.www-data /home/ebh.312.ninja/dell/ -R
+chown www-data.www-data /home/ebh.312.ninja/dell/ -R
 
 echo
 echo "Complete"
