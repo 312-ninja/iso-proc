@@ -1,9 +1,7 @@
-# iso-proc
-The tool takes all iso files in the current directory
-  * creates aptly named folder
-  * creates md5sums for each ISO 
-  * places files in new directory
-  * creates a list including URLs for easy curl/wget!
+# iso-proc #
+This tool takes all ISOs in the working directory and creates aptly named folder,
+creates md5sums for each ISO, places files in new directory, and creates a list 
+including URLs for easy curl/wget!
 
 Intended batch use:
 
