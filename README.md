@@ -3,10 +3,10 @@ The tool takes all iso files in the current directory, creates aptly named folde
 
 Intended batch use:
 
-        download all isos (parallel)
+  download all isos (parallel)
 
-                curl $YourURL/list.txt|parallel -j 5 --gnu "wget {}"
+        curl $YourURL/list.txt|parallel -j 5 --gnu "wget {}"
 
-        download all isos (one at a time)
+  download all isos (one at a time)
 
-                wget -i $YourURL/list.txt
+        wget -i $YourURL/list.txt
